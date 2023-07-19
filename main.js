@@ -80,7 +80,7 @@ searchMovieName.addEventListener("click", (e) => {
             span.onclick = function (e) {
               modal.style.display = "none";
             };
-            window.onclick = function (e) {
+            modal.onclick = function (e) {
               if (e.target == modal) {
                 modal.style.display = "none";
               }
