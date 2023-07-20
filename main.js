@@ -13,11 +13,11 @@ searchMovieName.addEventListener("click", (e) => {
         `http://www.omdbapi.com/?s=${movie}&apikey=574be188`
       );
       const movieSearch = await response.json();
-      const containerDeGrosseBite = document.body.appendChild(
+      const containerDeVincent = document.body.appendChild(
         document.createElement("div")
       );
-      containerDeGrosseBite.setAttribute("id", "containerId");
-      containerDeGrosseBite.classList.add(
+      containerDeVincent.setAttribute("id", "containerId");
+      containerDeVincent.classList.add(
         "deletable",
         "flex",
         "flex-col",
