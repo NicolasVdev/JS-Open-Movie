@@ -10,7 +10,7 @@ searchMovieName.addEventListener("click", (e) => {
   const getMovie = async () => {
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?s=${movie}&apikey=574be188`
+        `https://www.omdbapi.com/?s=${movie}&apikey=574be188`
       );
       const movieSearch = await response.json();
       const container = document.body.appendChild(
@@ -21,7 +21,7 @@ searchMovieName.addEventListener("click", (e) => {
       for (let i = 0; i < movieSearch.Search.length; i++) {
         try {
           const movieId = await fetch(
-            `http://www.omdbapi.com/?i=${movieSearch.Search[i].imdbID}&apikey=574be188`
+            `https://www.omdbapi.com/?i=${movieSearch.Search[i].imdbID}&apikey=574be188`
           );
           const movieIdSearch = await movieId.json();
           const div = document
